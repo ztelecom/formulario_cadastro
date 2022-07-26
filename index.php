@@ -52,7 +52,6 @@
                         <label>Sim</label>
                         <input type="radio" name="iniciante" value="nao"/> 
                         <label>Não</label>
-                        
                     </div>
                 </fieldset>
 
