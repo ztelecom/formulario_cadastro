@@ -1,7 +1,13 @@
-<!DOCTYPE hml>
+<?php 
+
+
+?>
+
+<!DOCTYPE html>
 <html>
     <head>
         <title>Formulario de Pesquisa</title>
+        <link rel="stylesheet" type="text/css" href="assets/css/estilo.css">
     </head>
 <body>
     <header></header>
