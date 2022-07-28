@@ -29,6 +29,126 @@ body {
     font-weight: bold;
     color: rgb(249, 252, 253);
     border-radius: 15px 15px 0px 0px;
+    box-shadow: 1px 1px 10px 2px #3c29eb;
 }
+.container form {
+    /*Dimensoes*/
+    padding-top: 30px;
+    padding-left: 35px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    /*Formatações*/
+    background-color: rgba(0,0,0,0.55);
+    color: #EEE;
+    font-family: Arial;
+    font-size: 16px;
+    box-shadow: 1px 1px 10px 2px #000;
+}
+.container fieldset {
+    /*Dimensoes*/
+    border: 0;
+    margin: 0;
+    margin-top: 30px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    /*Formatações*/
+
+}
+
+#collumn {
+    flex-direction: column;
+    width: 210px;
+}
+.container fieldset input{
+    /*Dimensoes*/
+    width: 250px;
+    margin-right: 15px;
+    height: 35px;
+
+    /*Formatações*/
+    border-radius: 3px;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+.form_campos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.text_desc {
+    display: flex;
+    justify-content: space-between;
+}
+.text_desc b{
+    /*Dimensoes*/
+    width: 100%;
+    margin-top: 5px;
+    margin-right: 15px;
+    text-align: left;
+    /*Formatações*/
+    font-weight: normal;
+    font-size: 14px;
+    color: #CCC;
+}
+
+.form_campos #empresa {
+    width: 523px;
+}
+
+fieldset .form_campos .alinhar {
+    display: flex;
+}
+
+fieldset .form_campos select {
+    /*Dimensoes*/
+    width: 523px;
+    margin-right: 15px;
+    height: 35px;
+    padding-left: 15px;
+
+    /*Formatações*/
+    border-radius: 3px;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    color: #777;
+    background-color: #eee;
+
+}
+.flex {
+    /*Dimensoes*/
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    /*Formatações*/
+    font-size: 20px;
+
+}
+#radio_ajuste{
+    width: 15px;
+    margin-right: 4px;
+}
+
+#radio_txt {
+    margin-right: 90px;
+}
+#buttom {
+    width: 210px;
+    margin-top: 5px;
+    border-radius: 5px;
+    background-color: #0ad893;
+    color: #eee;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 3px;
+}
+
+
+
 
 

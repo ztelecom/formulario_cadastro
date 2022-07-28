@@ -19,25 +19,37 @@
                 <form class="form_layout" method="POST" action="">
 
                 <fieldset>
-                    <label>Nome e Sobrenome</label>
+                    <label>Nome e <br>Sobrenome</label>
                     <div class="form_campos">
-                        <input type="text" name="name"/>
-                        <input type="text" name="lastname"/>
+                        <div class="campos">
+                            <input type="text" name="name"/>
+                            <input type="text" name="lastname"/>
+                        </div>
+                        <div class="text_desc">
+                            <b>Nome</b>
+                            <b>Sobrenome</b>
+                        </div>
                     </div>
                 </fieldset>
 
                 <fieldset>
-                    <label>Empresa</label>
+                    <label  style="display: flex; align-items: center;">Empresa</label>
                     <div class="form_campos">
-                        <input type="text" name="empresa"/>
+                        <input id="empresa" type="text" name="empresa"/>
                     </div>
                 </fieldset>
 
                 <fieldset>
                     <label>Telefone com DDD</label>
                     <div class="form_campos">
-                        <input type="text" name="ddd"/>
-                        <input type="text" name="telefone"/>
+                        <div class="campos">
+                            <input type="text" name="ddd"/>
+                            <input type="text" name="telefone"/>
+                        </div>
+                        <div class="text_desc">
+                            <b>DDD</b>
+                            <b>Telefone</b>
+                        </div>
                     </div>
                 </fieldset>
 
@@ -45,30 +57,25 @@
                     <label>Sexo</label>
                     <div class="form_campos">
                         <select>
+                            <option name="m">--Selecione a Opção</option>
                             <option name="m">Masculino</option>
                             <option name="f">Feminino</option>
                         </select>
                     </div>
                 </fieldset>
 
-                <fieldset>
+                <fieldset id="collumn">
                     <label>Você é iniciante?</label>
-                    <div class="form_campos">
-                        <input type="radio" name="iniciante" value="sim"/> 
-                        <label>Sim</label>
-                        <input type="radio" name="iniciante" value="nao"/> 
-                        <label>Não</label>
+                    <div class="form_campos flex">
+                        <input id="radio_ajuste" type="radio" name="iniciante" value="sim"/> 
+                        <label id="radio_txt">Sim</label>
+                        <input id="radio_ajuste"type="radio" name="iniciante" value="nao"/> 
+                        <label id="radio_txt">Não</label>
                     </div>
+                    <input id="buttom" type="submit" value="Cadastrar">
                 </fieldset>
 
-                <fieldset>
-                    <div class="form_campos">
-                        <input type="submit" value="Cadastrar">
-                    </div>
-                </fieldset>
-
-
-                <form>
+            <form>
             <div>
         </div>
     </section>
