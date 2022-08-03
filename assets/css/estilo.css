@@ -1,7 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 body {
     /*Dimensoes*/
     margin: 0;
     padding: 0;
+}
+html, body, section{
+    height: 100%;
 }
 .container {
     /*Dimensoes*/
@@ -10,6 +17,7 @@ body {
     padding-top: 35px;
     padding-left: 20%;
     padding-right: 20%;
+    padding-bottom: 35px;
     /*Formatações*/
     background-image: url("../img/form_img_back.jpg");
     background-size: cover;
@@ -65,12 +73,18 @@ body {
     width: 250px;
     margin-right: 15px;
     height: 35px;
+    padding-left: 8px;
 
     /*Formatações*/
     border-radius: 3px;
     box-shadow: 0 0 0 0;
     border: 0 none;
     outline: 0;
+    color: #04553a;
+}
+.container fieldset input::placeholder {
+    /*Ocultando place holder*/
+    color: #FFF;
 }
 
 .form_campos {
@@ -147,6 +161,233 @@ fieldset .form_campos select {
     font-size: 15px;
     letter-spacing: 3px;
 }
+
+footer {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    color: #f7f5f5;
+    text-align: center;
+    text-shadow: 2px 2px 1px#0c0c0c;
+}
+
+
+@media (min-width:1024px) and (max-width:1256px) {
+
+    .container fieldset input {
+        width: 195px;
+    }
+    .form_campos #empresa {
+        width: 409px;
+    }
+    fieldset .form_campos select {
+        width: 409px;
+    }
+
+}
+
+@media (min-width:926px) and (max-width:1023px){
+    .container {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+    .container form {
+        font-size: 15px;
+    }
+    .text_desc b {
+        font-size: 13px;
+    }
+    .container fieldset input {
+        width: 200px;
+        height: 30px;
+    }
+    .form_campos #empresa {
+        width: 417px;
+        height: 30px;
+    }
+    fieldset .form_campos select {
+        width: 417px;
+        height: 30px;
+    }
+}
+
+@media (min-width:825px) and (max-width:925px){
+    .container {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+    .container form {
+        font-size: 15px;
+    }
+    .text_desc b {
+        font-size: 13px;
+    }
+    .container fieldset input {
+        width: 180px;
+        height: 30px;
+    }
+    .form_campos #empresa {
+        width: 378px;
+        height: 30px;
+    }
+    fieldset .form_campos select {
+        width: 378px;
+        height: 30px;
+    }
+}
+
+@media (min-width:768px) and (max-width:824px){
+    .container {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+    .container form {
+        font-size: 15px;
+    }
+    .text_desc b {
+        font-size: 13px;
+    }
+    .container fieldset input {
+        width: 157px;
+        height: 30px;
+    }
+    .form_campos #empresa {
+        width: 332px;
+        height: 30px;
+    }
+    fieldset .form_campos select {
+        width: 332px;
+        height: 30px;
+    }
+}
+@media (min-width:425px) and (max-width:767px){
+    .container {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .container fieldset {
+        display: flex;
+        flex-direction: column;
+    }
+    .container fieldset input {
+        margin-bottom: 10px;
+        margin-top: 10px;
+        height: 30px;
+    }
+    .container fieldset input::placeholder {
+        /*Exibindo o placeholder*/
+        color: #CCC;
+    }
+    .container fieldset br {
+        display: none;
+    }
+    .text_desc {
+        display: none;
+    }
+    .form_campos #empresa {
+        width: 247px;
+        height: 30px;
+    }
+    fieldset .form_campos select {
+        width: 247px;
+        height: 30px;
+    }
+
+    footer {
+        background-color: #000;
+        font-size: 12px;
+    }
+    section{
+        height: auto;
+    }
+
+}
+
+@media (min-width:359px) and (max-width:424px){
+    .container {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .container fieldset {
+        display: flex;
+        flex-direction: column;
+    }
+    .container fieldset input {
+        margin-bottom: 10px;
+        margin-top: 10px;
+        height: 30px;
+    }
+    .container fieldset input::placeholder {
+        /*Exibindo o placeholder*/
+        color: #CCC;
+    }
+    .container fieldset br {
+        display: none;
+    }
+    .text_desc {
+        display: none;
+    }
+    .form_campos #empresa {
+        width: 247px;
+        height: 30px;
+    }
+    fieldset .form_campos select {
+        width: 247px;
+        height: 30px;
+    }
+
+    footer {
+        background-color: #000;
+        font-size: 12px;
+    }
+    section{
+        height: auto;
+    }
+
+}
+
+@media (min-width:320px) and (max-width:358px){
+    .container {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    .container fieldset {
+        display: flex;
+        flex-direction: column;
+    }
+    .container fieldset input {
+        margin-bottom: 10px;
+        margin-top: 10px;
+        height: 30px;
+    }
+    .container fieldset input::placeholder {
+        /*Exibindo o placeholder*/
+        color: #CCC;
+    }
+    .container fieldset br {
+        display: none;
+    }
+    .text_desc {
+        display: none;
+    }
+    .form_campos #empresa {
+        width: 247px;
+        height: 30px;
+    }
+    fieldset .form_campos select {
+        width: 247px;
+        height: 30px;
+    }
+
+    footer {
+        background-color: #000;
+        font-size: 12px;
+    }
+    section{
+        height: auto;
+    }
+
+}
+
 
 
 
